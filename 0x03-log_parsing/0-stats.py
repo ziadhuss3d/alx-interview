@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """
 Log parsing
 """
@@ -41,4 +41,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print_metrics(file_size_total, codes_count)
         raise
-   print_metrics(file_size_total, codes_count)
+    finally:
+        # Print metrics after processing all input
+        print_metrics(file_size_total, codes_count)
+
