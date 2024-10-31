@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 """
 Define validUTF8(data) function that validates whether a
